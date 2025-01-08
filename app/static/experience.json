@@ -1,12 +1,12 @@
 [
   {
-    "projectTitle": "Project One",
-    "projectDescriptiom": "Description",
+    "projectTitle": "Eclipse Fitness Gym",
+    "projectDescription": "Eclipse Fitness Gym is a state-of-the-art fitness facility designed to cater to individuals of all fitness levels. Our mission is to provide a comprehensive wellness experience that promotes physical health, mental well-being, and personal growth. Equipped with the latest fitness technology, a wide range of cardio and strength training equipment, and spacious workout areas, Eclipse Fitness offers an environment where members can push their limits and achieve their fitness goals. With certified personal trainers, group fitness classes, and a variety of wellness programs, Eclipse Fitness Gym aims to be more than just a gym – it's a community dedicated to empowering its members to live healthier, happier lives.",
     "projectImages": "/123.png"
   },
   {
-    "projectTitle": "Project One",
-    "projectDescriptiom": "Description",
+    "projectTitle": "Streetwear Apparel",
+    "projectDescription": "Streetwear Apparel is a fashion brand that blends urban culture with high-quality craftsmanship, offering a unique collection of clothing and accessories designed for the modern individual. Our designs draw inspiration from street culture, music, art, and youth movements, creating pieces that are not only stylish but also versatile and comfortable. With a focus on bold designs, limited-edition drops, and collaborations with local artists and influencers, Streetwear Apparel caters to those who want to express their individuality while staying ahead of the trends. From oversized hoodies to custom sneakers, our collections are made to make a statement on and off the streets.",
     "projectImages": "/123.png"
   }
 ]

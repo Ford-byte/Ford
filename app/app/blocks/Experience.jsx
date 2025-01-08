@@ -34,7 +34,7 @@ export default () => {
         <div className="container flex flex-col gap-y-6">
           <span
             ref={ref}
-            className={`text-5xl font-bold border-b-2 pb-2 ${
+            className={`text-5xl text-center sm:text-left font-bold border-b-2 ${
               isVisible ? "visible" : "invisible"
             }`}
           >
@@ -42,20 +42,22 @@ export default () => {
           </span>
 
           {experience &&
-            experience.map((item, index) => (
+            experience?.map((item, index) => (
               <div
                 key={index}
-                className={`pb-4 grid grid-cols-2 ${
+                className={`pb-12 grid grid-cols-1 sm:grid-cols-2 ${
                   index === experience.length - 1
                     ? ""
                     : "border-b-2 border-black"
                 }`}
               >
-                <div className="flex flex-col">
+                <div className="flex flex-col px-4">
                   <h3 className="text-3xl font-semibold">
                     {item.projectTitle}
                   </h3>
-                  <p className="text-lg">{item.projectDescriptiom}</p>
+                  <p className="text-xs sm:text-lg text-justify py-2 tracking-wider">
+                    {item.projectDescription}
+                  </p>
                 </div>
                 {item.projectImages && (
                   <Image

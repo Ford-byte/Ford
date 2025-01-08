@@ -26,7 +26,7 @@ export default () => {
   }, []);
 
   return (
-    <div className="relative py-4">
+    <div className="relative py-4" id="footer">
       <div className="centralize">
         <div className="container centralize">
           <div className="w-[700px] bg-gray-200 p-6 flex flex-col gap-y-4">
