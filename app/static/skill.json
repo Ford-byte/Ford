@@ -1,0 +1,27 @@
+[
+  {
+    "skill": "Node Js",
+    "percentage": "75%",
+    "image": "/nodejs.png"
+  },
+  {
+    "skill": "Express Js",
+    "percentage": "75%",
+    "image": "/expressjs.png"
+  },
+  {
+    "skill": "Vue Js",
+    "percentage": "80%",
+    "image": "/vuejs.png"
+  },
+  {
+    "skill": "Next Js",
+    "percentage": "75%",
+    "image": "/nextjs.png"
+  },
+  {
+    "skill": "PHP",
+    "image": "/php.png",
+    "percentage": "65%"
+  }
+]
