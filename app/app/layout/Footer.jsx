@@ -1,30 +1,8 @@
-"use client";
-import { useEffect, useState, useRef } from "react";
-
+import Image from "next/image";
+import FacebookIcon from "../icons/facebook";
+import GmailIcon from "../icons/gmail";
+import PhoneIcon from "../icons/phone";
 export default () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
   return (
     <div className="relative py-4" id="footer">
       <div className="centralize">
@@ -73,9 +51,44 @@ export default () => {
       </div>
       <div className="centralize py-12">
         <div className="container">
+          <div className="flex justify-evenly">
+            <div className="flex flex-col gap-y-2">
+              <div className="text-center">
+                <span className="flex justify-center">
+                  <FacebookIcon className={`size-12`} />
+                </span>
+              </div>
+              <span>iyacc@yahoo.com</span>
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <div className="text-center">
+                <span className="flex justify-center">
+                  <PhoneIcon className={`size-12`} />
+                </span>
+              </div>
+              <span>+63 9924030496</span>
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <div className="text-center">
+                <span className="flex justify-center">
+                  <GmailIcon className={`size-12`} />
+                </span>
+              </div>
+              <span>c.iyac123@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="centralize py-12">
+        <div className="container">
           <div className="centralize relative">
-            <div className="h-24 w-24 rounded-full bg-black flex justify-center items-center text-white z-10">
-              1
+            <div className="h-24 w-24 rounded-full bg-gray-100 flex justify-center items-center text-white z-10">
+              <Image
+                src={`/logo.png`}
+                width={100}
+                height={100}
+                className="w-24 h-24 border  border-black rounded-full p-2"
+              />
             </div>
             <div className="absolute top-1/2 left-0 right-0 border-t-2 border-black bg-black transform -translate-y-1/2"></div>
           </div>

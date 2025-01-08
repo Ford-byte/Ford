@@ -1,42 +1,13 @@
-"use client";
-import { useEffect, useState, useRef } from "react";
 import experience from "@/static/experience.json";
 import Image from "next/image";
 
 export default () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
   return (
     <div className="relative">
       <div className="centralize">
         <div className="container flex flex-col gap-y-6">
           <span
-            ref={ref}
-            className={`text-5xl text-center sm:text-left font-bold border-b-2 ${
-              isVisible ? "visible" : "invisible"
-            }`}
+            className={`text-5xl text-center sm:text-left font-bold border-b-2`}
           >
             Experience
           </span>

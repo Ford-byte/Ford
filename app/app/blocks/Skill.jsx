@@ -1,32 +1,7 @@
-"use client";
-import { useEffect, useState, useRef } from "react";
 import skill from "@/static/skill.json";
 import Image from "next/image";
 
 export default () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
   return (
     <div className="relative py-12">
       <div className="centralize">
