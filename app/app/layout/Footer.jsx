@@ -87,6 +87,7 @@ export default () => {
                 src={`/logo.png`}
                 width={100}
                 height={100}
+                alt="image"
                 className="w-24 h-24 border  border-black rounded-full p-2"
               />
             </div>
