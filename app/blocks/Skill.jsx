@@ -26,7 +26,7 @@ export default () => {
                     <div className="grid grid-cols-2 w-full h-full">
                       <span className="centralize text-5xl px-6 font-semibold flex items-center h-full">
                         <Image
-                          src={`${item.image}`}
+                          src={`./${item.image}`}
                           alt={item.image}
                           className="mt-4 w-full h-[300px] py-4 px-2 rounded-lg object-contain"
                           width={500}
